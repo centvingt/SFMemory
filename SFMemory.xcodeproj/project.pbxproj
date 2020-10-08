@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F55D6832529C5C200447F6C /* CardsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55D6822529C5C200447F6C /* CardsGridView.swift */; };
+		2F55D6862529C65C00447F6C /* GameHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55D6852529C65C00447F6C /* GameHeaderView.swift */; };
+		2F55D68D2529CFC200447F6C /* AllSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55D68C2529CFC200447F6C /* AllSymbols.swift */; };
+		2F55D6952529DF7800447F6C /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55D6942529DF7800447F6C /* GameData.swift */; };
+		2F9B40F62528923800634734 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9B40F52528923800634734 /* Modifiers.swift */; };
+		2F9B40FA2528B10900634734 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9B40F92528B10900634734 /* CardView.swift */; };
+		2F9B41002528CF3600634734 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9B40FF2528CF3600634734 /* Game.swift */; };
 		2FE68E8E2527106100232A2D /* SFMemoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE68E8D2527106100232A2D /* SFMemoryApp.swift */; };
 		2FE68E902527106100232A2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE68E8F2527106100232A2D /* ContentView.swift */; };
 		2FE68E922527106200232A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE68E912527106200232A2D /* Assets.xcassets */; };
 		2FE68E952527106200232A2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE68E942527106200232A2D /* Preview Assets.xcassets */; };
+		2FE68E9E2527128800232A2D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE68E9D2527128800232A2D /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F55D6822529C5C200447F6C /* CardsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsGridView.swift; sourceTree = "<group>"; };
+		2F55D6852529C65C00447F6C /* GameHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHeaderView.swift; sourceTree = "<group>"; };
+		2F55D68C2529CFC200447F6C /* AllSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSymbols.swift; sourceTree = "<group>"; };
+		2F55D6942529DF7800447F6C /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		2F9B40F52528923800634734 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		2F9B40F92528B10900634734 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2F9B40FF2528CF3600634734 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		2FE68E8A2527106100232A2D /* SFMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE68E8D2527106100232A2D /* SFMemoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFMemoryApp.swift; sourceTree = "<group>"; };
 		2FE68E8F2527106100232A2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2FE68E912527106200232A2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FE68E942527106200232A2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2FE68E962527106200232A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE68E9D2527128800232A2D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F55D68A2529CFAB00447F6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F9B40FF2528CF3600634734 /* Game.swift */,
+				2F55D6942529DF7800447F6C /* GameData.swift */,
+				2F55D68C2529CFC200447F6C /* AllSymbols.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2FE68E812527106100232A2D = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +79,13 @@
 			isa = PBXGroup;
 			children = (
 				2FE68E8D2527106100232A2D /* SFMemoryApp.swift */,
+				2F9B40F52528923800634734 /* Modifiers.swift */,
+				2F55D6822529C5C200447F6C /* CardsGridView.swift */,
+				2F9B40F92528B10900634734 /* CardView.swift */,
 				2FE68E8F2527106100232A2D /* ContentView.swift */,
+				2FE68E9D2527128800232A2D /* GameView.swift */,
+				2F55D6852529C65C00447F6C /* GameHeaderView.swift */,
+				2F55D68A2529CFAB00447F6C /* Model */,
 				2FE68E912527106200232A2D /* Assets.xcassets */,
 				2FE68E962527106200232A2D /* Info.plist */,
 				2FE68E932527106200232A2D /* Preview Content */,
@@ -138,8 +170,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F55D68D2529CFC200447F6C /* AllSymbols.swift in Sources */,
+				2F55D6952529DF7800447F6C /* GameData.swift in Sources */,
+				2F9B40F62528923800634734 /* Modifiers.swift in Sources */,
+				2F55D6832529C5C200447F6C /* CardsGridView.swift in Sources */,
 				2FE68E902527106100232A2D /* ContentView.swift in Sources */,
+				2FE68E9E2527128800232A2D /* GameView.swift in Sources */,
+				2F9B41002528CF3600634734 /* Game.swift in Sources */,
+				2F55D6862529C65C00447F6C /* GameHeaderView.swift in Sources */,
 				2FE68E8E2527106100232A2D /* SFMemoryApp.swift in Sources */,
+				2F9B40FA2528B10900634734 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = design.120.SFMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = design.120.SFMemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
