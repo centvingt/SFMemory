@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isActive : Bool = false
     @AppStorage("bestScore") var bestScore: Int = 0
+
+    @EnvironmentObject var gameData: GameData
 
     var body: some View {
         NavigationView {
@@ -24,7 +25,7 @@ struct ContentView: View {
                 }
                 Spacer()
                 Group {
-                    if bestScore > 0 || true {
+                    if bestScore > 0 {
                         Text("Mon meilleur score :")
                             .font(.system(size: 24, weight: .light, design: .rounded))
                         HStack {
@@ -40,13 +41,13 @@ struct ContentView: View {
                 }
                 .padding(0)
                 Spacer()
-                NavigationLink("Nouvelle partie", destination: GameView(rootIsActive: $isActive), isActive: $isActive)
+                NavigationLink("Nouvelle partie", destination: GameView(), isActive: $gameData.rootIsActive)
                     .customButton(Color.blue)
             }
             .modifier(MainViewModifier())
             .padding(.top, 100)
             .navigationBarHidden(true)
-        }.environmentObject(GameData())
+        }
     }
 }
 

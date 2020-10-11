@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct CardsGridView: View {
-    let symbols: [String]
+    @EnvironmentObject var gameData: GameData
 
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 3.0)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .customBackground(Color.blue)
+                .customBackground(gameData.scoreColor)
             Group {
                 let padding: CGFloat = 20
                 let spacing: CGFloat = 10
@@ -34,7 +34,7 @@ struct CardsGridView: View {
 
                     LazyVGrid(columns: columns, alignment: .center, spacing: 10) {
                         ForEach((0...27), id: \.self) {
-                            CardView(cardLength: cardLength, index: $0, symbol: Game.shared.symbols[$0])
+                            CardView(cardLength: cardLength, index: $0, symbol: gameData.symbols[$0])
                         }
                     }
                     .offset(x: gridOffset)
@@ -48,11 +48,12 @@ struct CardsGridView: View {
     }
 }
 
-struct CardsGridView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardsGridView(symbols: Game.shared.symbols)
-            .padding()
-    }
-}
+// Faire un fakeSymbols pour faire la preview
+//struct CardsGridView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CardsGridView(symbols: Game.shared.symbols)
+//            .padding()
+//    }
+//}
 
 

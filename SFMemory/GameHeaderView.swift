@@ -23,27 +23,11 @@ struct GameHeaderView: View {
             }
             Spacer()
             Group {
-                if gameData.score == 0 || gameData.score == bestScore {
-                    HStack(alignment: .firstTextBaseline, spacing: 3) {
-                        Text(String(gameData.score)).fontWeight(.medium).offset(y: 1).font(.system(size: 30))
-                        Text("essais").fontWeight(.light).font(.system(size: 20))
-                    }.foregroundColor(.blue)
-                    .offset(y: 1)
-                }
-                if  gameData.score != 0 && gameData.score < bestScore {
-                    HStack(alignment: .firstTextBaseline, spacing: 3) {
-                        Text(String(gameData.score)).fontWeight(.medium).offset(y: 1).font(.system(size: 30))
-                        Text("essais").fontWeight(.light).font(.system(size: 20))
-                    }.foregroundColor(.green)
-                    .offset(y: 1)
-                }
-                if gameData.score > bestScore {
-                    HStack(alignment: .firstTextBaseline, spacing: 3) {
-                        Text(String(gameData.score)).fontWeight(.medium).offset(y: 1).font(.system(size: 30))
-                        Text("essais").fontWeight(.light).font(.system(size: 20))
-                    }.foregroundColor(.orange)
-                    .offset(y: 1)
-                }
+                HStack(alignment: .firstTextBaseline, spacing: 3) {
+                    Text(String(gameData.score)).fontWeight(.medium).offset(y: 1).font(.system(size: 30))
+                    Text("essais").fontWeight(.light).font(.system(size: 20))
+                }.foregroundColor(gameData.scoreColor)
+                .offset(y: 1)
             }
         }
     }

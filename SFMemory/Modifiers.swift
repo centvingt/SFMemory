@@ -12,8 +12,7 @@ struct MainViewModifier: ViewModifier {
         return content
             .font(.system(size: 32, weight: .medium, design: .rounded))
             .foregroundColor(Color.blue)
-            .padding(.top, 0)
-            .padding(.bottom, 10)
+            .padding(.vertical, 10)
             .padding(.horizontal, 10)
     }
 }
@@ -41,6 +40,10 @@ extension View {
                 .fill(color)
         )
         .foregroundColor(color)
+    }
+    func print(_ value: Any) -> Self {
+        Swift.print(value)
+        return self
     }
 }
 

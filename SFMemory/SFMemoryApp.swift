@@ -12,6 +12,7 @@ struct SFMemoryApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(GameData())
         }
     }
 }
