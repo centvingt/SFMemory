@@ -18,7 +18,7 @@ struct GameHeaderView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 47, height: 47, alignment: .top)
-                Text("SF Memory")
+                Text("SF Memo")
                     .font(.system(size: 28, weight: .bold, design: .rounded))
             }
             Spacer()

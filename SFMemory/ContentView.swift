@@ -20,7 +20,7 @@ struct ContentView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 80, height: 80, alignment: .top)
-                    Text("SF Memory")
+                    Text("SF Memo")
                         .font(.system(size: 48, weight: .bold, design: .rounded))
                 }
                 Spacer()
